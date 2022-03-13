@@ -99,17 +99,68 @@
 // });
 // server.listen(5000);
 
-const http = require("http");
-const server = http.createServer((req, res) => {
-  if (req.url === "/") {
-    res.end("welcome to our home page");
-  } else if (req.url === "/about") {
-    res.end("welcome to our about history page");
-  } else
-    res.end(`
-  <h1>Opps</h1>
-  <p>Cant seem to find the page that you are looking for<p>
-  <a href='/'>back home</a>
-  `);
-});
-server.listen(5000);
+// const http = require("http");
+// const server = http.createServer((req, res) => {
+//   if (req.url === "/") {
+//     res.end("welcome to our home page");
+//   } else if (req.url === "/about") {
+//     res.end("welcome to our about history page");
+//   } else
+//     res.end(`
+//   <h1>Opps</h1>
+//   <p>Cant seem to find the page that you are looking for<p>
+//   <a href='/'>back home</a>
+//   `);
+// });
+// server.listen(5000);
+
+// console.log("hello world");
+
+// const { readFile, truncateSync } = require("fs");
+// console.log("started a first task");
+// readFile("./content/test.txt", "utf-8", (err, result) => {
+//   if (err) {
+//     console.log(err);
+//     return;
+//   }
+//   console.log(result);
+//   console.log("completed first task");
+// });
+
+// console.log("starting next task");
+
+// console.log("first");
+// setTimeout(() => {
+//   console.log("second");
+// }, 0);
+// console.log("third");
+
+// const http = require("http");
+
+// const server = http.createServer((req, res) => {
+//   console.log("request event");
+//   res.end("hello world");
+// });
+
+// server.listen(5000, () => {
+//   console.log("server listening on port : 5000");
+// });
+
+// const { readFile, writeFile } = require("fs").promises
+// const start = async () => {
+//   try {
+//     const first = await readFile("./content/test.txt", "utf-8");
+//     const second = await readFile("./content/2ndtext.txt", "utf-8");
+//     console.log(first, second);
+//     await writeFile(
+//       "./content/subfolder/stuff.txt",
+//       `Insane stuff, ${first}, ${second}`,
+//       {
+//         flag: "a",
+//       }
+//     );
+//   } catch (error) {
+//     console.log(error);
+//   }
+// };
+// start();
